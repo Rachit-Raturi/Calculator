@@ -1,0 +1,88 @@
+.form-container {
+  background: #181616;
+  border-radius: 2em;
+  width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+
+body {
+  background-color: darkslategray;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.zero-button {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+.operation-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.calculator-buttons button {
+  background-color: gray;
+  border-radius: .5em;
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.zero-button button {
+  background-color: gray;
+  border-radius: .5em;
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.operation-buttons button {
+  background-color: pink;
+  border-radius: .5em;
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.operation-buttons button:last-child {
+  background-color: orange;
+  border-radius: .5em;
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#result {
+  box-sizing: border-box;
+  border-radius: .5em;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  text-align: right;
+}
+
+button:hover {
+  background-color: #514C4C;
+  cursor: pointer;
+}
+
+.operation-buttons button:hover {
+  background-color: #834667;
+}
+
+.operation-buttons button:last-child:hover {
+  background-color: rgb(167, 92, 0);
+}
